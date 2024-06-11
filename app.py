@@ -36,6 +36,6 @@ else:
     image = Image.open(file)
     st.image(image, use_column_width=True)
     model = tf.keras.models.load_model('/mount/src/banana_ripeneness/ripeness.h5')
-    Generate_pred = st.button("Predict Ripeness Stage..")
+    Generate_pred = st.button("Predict Ripeness Stage..::ripe")
     if Generate_pred:
         prediction = predict_stage(image, model)
